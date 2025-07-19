@@ -3,6 +3,9 @@ body {
   margin: 0;
   padding: 0;
   background: #f4f4f4;
+
+  background: linear-gradient(to right, #1e3c72, #2a5298);
+  color: white; 
 }
 
 header, footer {
