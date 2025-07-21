@@ -8,51 +8,102 @@
 </head>
 <body>
   <header>
-    <nav class="navbar">
+    <section id="home" class="hero">
+    <div class="hero-text">
+      <h1 class="hero-title">Hi, this is Danny Lin</h1>
+      <p class="hero-description">Developer • Engineer • Designer.</p>
+    </div>
+  </section>
+  <nav class="right-navbar">
+    <ul>
+      <li><a href="mailto:lindanny75@gmail.com" target="_blank" title="Email Me: lindanny75@gmail.com">
+        <img src="images/link_icons/gmail.png" alt="Email me" class="right-nav-icon">
+      </a></li>
+      <li><a href="https://github.com/GreeNM11" target="_blank" title="My Github: GreeNM11">
+        <img src="images/link_icons/github.png" alt="Github" class="right-nav-icon">
+      </a></li>
+      <li><a href="https://www.linkedin.com/in/danny-lin-35a277296" target="_blank" title="My LinkedIn: Danny Lin">
+        <img src="images/link_icons/linkedin.png" alt="LinkedIn" class="right-nav-icon">
+      </a></li>
+    </ul>
+  </nav>
+  </header>
+  <nav class="navbar">
       <ul>
         <li><a href="#home">Home</a></li> 
         <li><a href="#about">About</a></li>
         <li><a href="#work">Work</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="resume.pdf" download>-> Resume</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="resume.pdf" download>
+          Resume
+          <img src="images/link_icons/download.png" alt=" " class="nav-icon" title="Download Resume">
+        </a></li>
       </ul>
     </nav>
-  </header>
-  <section id="home" class="hero">
-    <div class="hero-text">
-      <h1>Welcome to My Portfolio</h1>
-      <p>Developer • Designer • Creator</p>
-    </div>
-  </section>
   <section id="about">
-    <h2 class="carousel-title">Languages I Know</h2>
-    <div class="carousel-container">
-      <div class="carousel-track" id="carousel-track">
-        <img src="images/coding_icons/cpp.png" alt="C++">
-        <img src="images/coding_icons/python.png" alt="Python">
-        <img src="images/coding_icons/html.png" alt="HTML">
-        <img src="images/coding_icons/css.png" alt="CSS">
-        <img src="images/coding_icons/raspberry-pi.png" alt="JS">
-              <!-- Repeat images for seamless loop -->
-        <img src="images/coding_icons/cpp.png" alt="C++">
-        <img src="images/coding_icons/python.png" alt="Python">
-        <img src="images/coding_icons/html.png" alt="HTML">
-        <img src="images/coding_icons/css.png" alt="CSS">
-        <img src="images/coding_icons/raspberry-pi.png" alt="JS">
+    <h1 class="title-box">About Me</h1>
+    <div class="about-content">
+      <p class="about-description">
+        Welcome to my portfolio!<br><br>
+        I am a Computer Engineer at <br> Texas A&M
+        <img src="images/link_icons/tamu_icon.png" alt=" " class="paragraph-icon" title="Texas A&M"></a>
+        Class of 2027. 
+      </p>
+      <div class="carousel-section">
+        <h2 class="carousel-title">Coding Skills</h2>
+        <div class="carousel-container">
+          <div class="carousel-track" id="carousel-track">
+            <img src="images/coding_icons/cpp.png" alt="C++">
+            <img src="images/coding_icons/python.png" alt="Python">
+            <img src="images/coding_icons/html.png" alt="HTML">
+            <img src="images/coding_icons/css.png" alt="CSS">
+            <img src="images/coding_icons/raspberry-pi.png" alt="JS">
+                  <!-- Repeat images for seamless loop -->
+            <img src="images/coding_icons/cpp.png" alt="C++">
+            <img src="images/coding_icons/python.png" alt="Python">
+            <img src="images/coding_icons/html.png" alt="HTML">
+            <img src="images/coding_icons/css.png" alt="CSS">
+            <img src="images/coding_icons/raspberry-pi.png" alt="JS">
+          </div>
+        </div>
       </div>
     </div>
   </section>
-  <section id="work"><h2>Work</h2></section>
-  <section id="contact"><h2>Contact</h2></section>
-  <main>
-    <section id="projects">
-      <h2>Projects</h2>
-      <p>Describe your cool projects here.</p>
-    </section>
-  </main>
+  <section id="work">
+    <h1>Work</h1>
+    <div class="work-content">
+      <p class="work-description">
+        <span class="paragraph-title">CMS Auto | Bookkeeper/Auditor | Dec. 2024 - Today</span>
+        <br>
+        CMS Auto Website:
+        <a href="https://cmsautorepair.com/" target="_blank" title="CMS Auto Website">
+          <img src="images/link_icons/cms_icon.png" alt="CMS Auto" class="company-icon">
+        </a>
+        <br>
+        <span class="dropdown-toggle" onclick="toggleDropdown(this)">
+          > Performed weekly and monthly accounting tasks
+          <span class="dropdown-content"> <br>
+            — Bookkeeping, Bank Reconciliation, Transaction Matching
+          </span>
+        </span>
+      </p>
+    </div>
+  </section>
+  <section id="projects"><h2>Projects</h2></section>
   <footer>
     <p>Contact me at: youremail@example.com</p>
   </footer>
 
 </body>
 </html>
+
+<script>
+  function toggleDropdown(element) {
+    const content = element.querySelector('.dropdown-content');
+    if (content.style.display === 'inline') {
+      content.style.display = 'none';
+    } else {
+      content.style.display = 'inline';
+    }
+  }
+</script>
