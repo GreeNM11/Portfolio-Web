@@ -11,7 +11,7 @@
     <section id="home" class="hero">
     <div class="hero-text">
       <h1 class="hero-title">Hi, this is Danny Lin</h1>
-      <p class="hero-description">Developer • Engineer • Designer.</p>
+      <p class="hero-description">Developer • Engineer • Designer</p>
     </div>
   </section>
   <nav class="right-navbar">
@@ -72,38 +72,93 @@
   <section id="work">
     <h1>Work</h1>
     <div class="work-content">
-      <p class="work-description">
-        <span class="paragraph-title">CMS Auto | Bookkeeper/Auditor | Dec. 2024 - Today</span>
+      <div class="work-description">
+        <span class="paragraph-title">CMS Auto | Auditor/Bookkeeper | Dec. 2024 - Today</span>
         <br>
         CMS Auto Website:
         <a href="https://cmsautorepair.com/" target="_blank" title="CMS Auto Website">
           <img src="images/link_icons/cms_icon.png" alt="CMS Auto" class="company-icon">
-        </a>
-        <br>
-        <span class="dropdown-toggle" onclick="toggleDropdown(this)">
-          > Performed weekly and monthly accounting tasks
-          <span class="dropdown-content"> <br>
-            — Bookkeeping, Bank Reconciliation, Transaction Matching
+        </a> 
+        <div class="dropdown-wrapper">
+          <span class="dropdown-toggle" onclick="toggleDropdown(this)">
+            > Performed weekly and monthly accounting tasks
           </span>
-        </span>
-      </p>
+          <div class="dropdown-content">
+            <br>
+            — gathered sales tax and WIP reports from CCC One <br>
+            — audited monthly transaction matching to banks & credit cards in QB<br>
+            — reconciled business banks & credit cards in QB<br>
+            — analyzed monthly profit/loss reports to audit potential issues<br>
+            — constructed reports analyizing trends from previous 5+ years to reflect current financials
+          </div>
+        </div>
+        <div class="dropdown-wrapper">
+          <span class="dropdown-toggle" onclick="toggleDropdown(this)">
+            > Assisted with start up company processes
+          </span>
+          <div class="dropdown-content">
+            <br>
+            — audited discrepancies with CCC One to QB financials and fixed data entry errors<br>
+            — investigated misplaced checks/cash when auditing bank cash flow<br>
+            — organized catagorizations of QB & CCC One vendors, expenses, and customers<br>
+            — coordinated with CrunchIT Financial Services to clean up previous bad financials<br>
+          </div>
+        </div>
+      </div>
+      <img src="images/preview_images/cms_flowchart.png" alt="CMS Auto" class="work-image">
     </div>
   </section>
-  <section id="projects"><h2>Projects</h2></section>
+  <section id="projects">
+    <h1>Projects</h1>
+      <div class="projects-content">
+      <div class="projects-description">
+        <span class="paragraph-title">ChessQt | C++, Qt Creator</span>
+        <br>
+        CMS Auto Website:
+        <div class="dropdown-wrapper">
+          <span class="dropdown-toggle" onclick="toggleDropdown(this)">
+            > Performed weekly and monthly accounting tasks
+          </span>
+          <div class="dropdown-content">
+            <br>
+            — gathered sales tax and WIP reports from CCC One <br>
+            — audited monthly transaction matching to banks & credit cards in QB<br>
+            — reconciled business banks & credit cards in QB<br>
+            — analyzed monthly profit/loss reports to audit potential issues<br>
+            — constructed reports analyizing trends from previous 5+ years to reflect current financials
+          </div>
+        </div>
+        <div class="dropdown-wrapper">
+          <span class="dropdown-toggle" onclick="toggleDropdown(this)">
+            > Assisted with start up company processes
+          </span>
+          <div class="dropdown-content">
+            <br>
+            — audited discrepancies with CCC One to QB financials and fixed data entry errors<br>
+            — investigated misplaced checks/cash when auditing bank cash flow<br>
+            — organized catagorizations of QB & CCC One vendors, expenses, and customers<br>
+            — coordinated with CrunchIT Financial Services to clean up previous bad financials<br>
+          </div>
+        </div>
+      </div>
+      <img src="images/preview_images/cms_flowchart.png" alt="CMS Auto" class="work-image">
+    </div>
+  </section>
   <footer>
     <p>Contact me at: youremail@example.com</p>
   </footer>
-
 </body>
 </html>
 
 <script>
-  function toggleDropdown(element) {
-    const content = element.querySelector('.dropdown-content');
-    if (content.style.display === 'inline') {
-      content.style.display = 'none';
-    } else {
-      content.style.display = 'inline';
-    }
+function toggleDropdown(element) {
+  // Find the next sibling with class 'dropdown-content'
+  const content = element.nextElementSibling;
+
+  if (content.style.display === 'inline') {
+    content.style.display = 'none';
+  } else {
+    content.style.display = 'inline';
   }
+}
 </script>
