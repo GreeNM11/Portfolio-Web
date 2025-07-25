@@ -166,9 +166,10 @@ body {
 }
 
 #about {
-  height: 35vw;
+  height: auto;
   color: rgb(31, 31, 31);
   padding: 20px;
+  box-shadow: 0 6px 4px rgba(0,0,0,0.2);
 }
 #about h1 {
   display: inline-block; 
@@ -196,7 +197,7 @@ body {
   margin-left: 150px; 
   margin-top: 20px;
   width: 30vw;  
-  height: 25vw;    
+  height: auto;    
   flex-shrink: 0;        
   background-color: #fcfeff; 
   padding: 30px 20px; 
@@ -250,6 +251,7 @@ body {
   height: auto;
   color: rgb(31, 31, 31);
   padding: 20px;
+  box-shadow: 0 6px 4px rgba(0,0,0,0.2);
 }
 #work h1 {
   display: inline-block; 
@@ -296,7 +298,8 @@ body {
 #projects{
   height: auto;
   color: rgb(31, 31, 31);
-  padding: 40px;
+  padding: 20px;
+  box-shadow: 0 6px 4px rgba(0,0,0,0.2);
 }
 #projects h1 {
   display: inline-block; 
