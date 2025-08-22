@@ -382,21 +382,25 @@ function toggleDropdown(element) {
 </script>
 
 <script>
-  const playlists = {
-    videoPlayer1: [ // Rogue like game
-      "videos/spacerp1.mp4",
-      "videos/spacerp2.mp4"
-    ],
-    videoPlayer2: [ // UE5 Tower Defense
-      "videos/tdp1.mp4",
-      "videos/tdp2.mp4",
-      "videos/tdp3.mp4"
-    ],
-    videoPlayer3: [ // ChessQT App
-      "videos/chessqtp1.mp4",
-      "videos/chessqtp1.mp4"
-    ]
-  };
+const basePath = window.location.hostname === "username.github.io" 
+  ? "/YourRepoName/"  // GitHub Pages
+  : "./";             // Local
+
+const playlists = {
+  videoPlayer1: [
+    basePath + "videos/spacerp1.mp4",
+    basePath + "videos/spacerp2.mp4"
+  ],
+  videoPlayer2: [
+    basePath + "videos/tdp1.mp4",
+    basePath + "videos/tdp2.mp4",
+    basePath + "videos/tdp3.mp4"
+  ],
+  videoPlayer3: [
+    basePath + "videos/chessqtp1.mp4",
+    basePath + "videos/chessqtp2.mp4"
+  ]
+};
   function setupPlaylist(playerId, playlist) {
     const player = document.getElementById(playerId);
     let index = 0;
