@@ -31,7 +31,7 @@ body {
   font-size: 18px;
   margin: 0;
   padding: 0;
-  background: linear-gradient(to right, #cbd2e0, #ffffff);
+  background: linear-gradient(to right, #dbe0eb, #ffffff);
 }
 .paragraph-title{
   display: inline-block;
@@ -193,9 +193,9 @@ body {
   font-family: Source Sans Pro, sans-serif;
   font-weight: 800;
   font-size: 20px;
-  margin-left: 15vw; 
+  margin-left: 10vw; 
   margin-top: 2vw;
-  width: 30vw;  
+  width: 40vw;  
   height: auto;    
   flex-shrink: 0;        
   background-color: #fcfeff; 
@@ -354,10 +354,10 @@ body {
 }
 
 .looping-gif {
-  width: 300px;
+  width: 400px;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
   margin-top: 40px; 
-  margin-left: 40px;  
+  margin-left: 15px;  
 }
 
