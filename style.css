@@ -288,10 +288,11 @@ body {
 }
 .work-image {
   display: block;
-  width: 400px;
+  width: 40vw;
   height: auto;
   margin-top: 40px; 
-  margin-left: 40px;  
+  margin-left: 10px;  
+  border-radius: 1vw;
   box-shadow: 0 2px 12px rgba(0,0,0,0.3); 
 }
 #projects{
