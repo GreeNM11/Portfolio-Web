@@ -198,13 +198,13 @@
         </div>
         <div class="dropdown-wrapper">
         <span class="dropdown-toggle" onclick="toggleDropdown(this)">
-          > Developed fully functional chess game
+          > Developed Qt Chess Desktop Application with Online Multiplayer
         </span>
         <div class="dropdown-content">
           <ul>
-            <li>Connected UI & piece images to object-oriented logic and move-generating algorithms</li>
-            <li>Includes checks, checkmate, pins, and only allowing valid moves (blocking/capturing piece checking your king)</li>
-            <li>Included interactions for en passant, castling, and promotion</li>
+            <li>Play chess with all chess rules reinforced</li>
+            <li>Includes checks, checkmate, pins, and only valid moves (blocking/capturing piece checking your king)</li>
+            <li>Included interactions for en passant, castling, and promotion(auto queen)</li>
           </ul>
         </div>
       </div>
@@ -215,31 +215,24 @@
         </span>
         <div class="dropdown-content">
           <ul>
-            <li>Server handles all client requests and connections</li>
+            <li>TCP Server on GCP</li>
             <ul>
-              <li>Server generates unique code for each game session that players are placed in</li>
-              <li>Server keeps track of all socket connections</li>
-              <li>Manages many unique message codes like creating sessions, receiving moves, joining a game, etc.</li>
+              <li>Handles chess sessions - moves, chat, and checkmate/winning between players</li>
+              <li>Includes security of move validation and who won to prevent cheating</li>
             </ul>
-            <li>Server security measures implementation</li>
-            <ul>
-              <li>Server runs its own version of the chess game to validate moves and checkmate/players winning</li>
-              <li>Sends back error messages if client sends incorrect information or tries to cheat</li>
-            </ul>
+            <li>Houses PostgreSQL database for user info</li>
           </ul>
         </div>
       </div>
 
       <div class="dropdown-wrapper">
         <span class="dropdown-toggle" onclick="toggleDropdown(this)">
-          > Includes database of player accounts and games
+          > Deployed onto itch.io for public download
         </span>
         <div class="dropdown-content">
           <ul>
-            <li>Database using PostgreSQL</li>
-            <ul>
-              <li>Houses unique player login information</li>
-            </ul>
+            <li>Server runs on linux GCP VM for clients to connect to</li>
+            <li>All Qt libraries packaged</li>
           </ul>
         </div>
       </div>
@@ -360,7 +353,6 @@
     margin-left: 20px;     
     padding-left: 20px;
   }
-
   .dropdown-content ul ul {
     margin-left: 20px;    
   }
